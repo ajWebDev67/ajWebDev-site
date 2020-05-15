@@ -1,0 +1,289 @@
+
+body {
+  width: 100%;
+  height: 800px;
+  background-color: #666666;
+}
+
+#page-container {
+  display: block;
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h1 {
+  font-family: 'Noticia Text', serif;
+  color: #FFF;
+}
+
+h2 {
+  display: block;
+  width: 1200;
+}
+
+a, h2, h3, h4, h5, h6, p, article {
+  font-family: 'Abel', sans-serif;
+  color: #FFF;
+}
+
+h2 {
+  margin: 40px 60px;
+  font-size: 1.6em;
+}
+
+nav {
+  width: 100%;
+  height: 170px;
+  padding-top: 20px;
+}
+
+#grid-container {
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 160px 1fr 160px 1fr 160px 1fr 160px 1fr;
+  font-size: 1.1em;
+  grid-gap: 2px;
+}
+
+/* Codecademy */
+
+.articleA {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border: 2px solid aliceblue;
+  background-color: aliceblue;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto 180px;
+  grid-template-rows: 150px;
+}
+
+.articleA-itemA {
+  color: black;
+  grid-column: 1;
+  align-self: center;
+  padding: 0 20px;
+}
+
+.articleA-itemA a {
+  color: black;
+}
+
+.articleA-itemB {
+  grid-column: 2;
+  align-self: center;
+  margin: 0 20px 0 0;
+}
+
+/* Spacer */
+
+.articleB {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  border: 2px solid #FF9900;
+  background-color: #FF9900;
+  border-radius: 20px;
+}
+
+.articleB p {
+  font-size: 2em;
+  font-family: 'Noticia Text', serif;
+  padding-left: 10px;
+}
+
+/* Video clip */
+
+.articleC {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 2px solid darkseagreen;
+  background-color: darkseagreen;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: 1fr 189px 1fr auto;
+  grid-template-rows: auto;
+}
+
+.articleC-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 20px;
+}
+
+.articleC-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* GitHub */
+
+.articleD {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid silver;
+  background-color: silver;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: 1fr 160px 1fr auto;
+  grid-template-rows: auto;
+}
+
+.articleD-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 15px 20px;
+}
+
+.articleD-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+}
+
+/*  Magento */
+
+.articleE {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  border: 2px solid #6666CC;
+  background-color: #6666CC;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: 160px 275px;
+}
+
+.articleE-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 20px;
+}
+
+.articleE-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  margin: 0;
+  padding-right: 10px;
+}
+
+/*  Netsuite  */
+
+.articleF {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border: 2px solid #996699;
+  background-color: #996699;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: 160px 275px;
+  grid-template-rows: 300px;
+}
+
+.articleF-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 20px 10px;
+  align-self: center;
+}
+
+.articleF-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  margin: 0;
+  padding-right: 10px;
+}
+
+/*  Twitter  */
+
+.articleG {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  border: 2px solid #FFF;
+  background-color: #FFF;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: 140px auto;
+  grid-template-rows: 160px;
+}
+
+.articleG-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 20px 10px;
+  align-self: center;
+}
+
+.articleG-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  margin: 0;
+  color: black;
+}
+
+/* Board Game Arena */
+
+.articleH {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border: 2px solid #CC9966;
+  background-color: #CC9966;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: 160px 275px;
+  grid-template-rows: 300px;
+}
+
+.articleH-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 20px 10px;
+  align-self: center;
+}
+
+.articleH-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  margin: 0;
+  padding-right: 10px;
+  color: #FFF;
+}
+
+/* Spacer */
+
+.articleI {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  border: 2px solid #FF9900;
+  background-color: #FF9900;
+  border-radius: 20px;
+}
+
+.navItem {
+  font-family: 'Noticia Text', serif;
+  float:left;
+  margin: 52px 40px 0 40px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.siteLogo {
+  float:left;
+  margin: 5px 60px;
+  text-decoration: none;
+}
