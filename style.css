@@ -85,8 +85,8 @@ nav {
 .articleB {
   grid-column-start: 5;
   grid-column-end: 6;
-  border: 2px solid #FF9900;
-  background-color: #FF9900;
+  border: 2px solid #FF9933;
+  background-color: #FF9933;
   border-radius: 20px;
 }
 
@@ -269,8 +269,8 @@ nav {
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
-  border: 2px solid #FF9900;
-  background-color: #FF9900;
+  border: 2px solid #FF9933;
+  background-color: #FF9933;
   border-radius: 20px;
 }
 
