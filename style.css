@@ -7,7 +7,7 @@ body {
 
 #page-container {
   display: block;
-  width: 1200px;
+  width: 1150px;
   height: 700px;
   margin: 0 auto;
 }
@@ -44,15 +44,15 @@ nav {
 
 #grid-container {
   display:grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr 160px 1fr 160px 1fr 160px 1fr 160px 1fr;
+  grid-template-columns: 142px 142px 142px 142px 142px 142px 142px 142px;
+  grid-template-rows: 170px 170px 170px 170px;
   font-size: 1.1em;
   grid-gap: 2px;
 }
 
 /* Codecademy */
 
-.articleA {
+#articleA {
   grid-column-start: 1;
   grid-column-end: 5;
   border: 2px solid aliceblue;
@@ -61,6 +61,8 @@ nav {
   display: grid;
   grid-template-columns: auto 180px;
   grid-template-rows: 150px;
+  z-index: 98;
+  transition: transform 2s ease 1s;
 }
 
 .articleA-itemA {
@@ -80,25 +82,27 @@ nav {
   margin: 0 20px 0 0;
 }
 
-/* Spacer */
+/* Shuffle */
 
-.articleB {
+#articleB {
   grid-column-start: 5;
   grid-column-end: 6;
   border: 2px solid #FF9933;
   background-color: #FF9933;
   border-radius: 20px;
+  z-index: 97;
+  transition: transform 2s ease 1s;
 }
 
-.articleB p {
-  font-size: 2em;
+#articleB p {
+  font-size: 1.8em;
   font-family: 'Noticia Text', serif;
   padding-left: 10px;
 }
 
 /* Video clip */
 
-.articleC {
+#articleC {
   grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -109,6 +113,8 @@ nav {
   display:grid;
   grid-template-columns: 1fr 189px 1fr auto;
   grid-template-rows: auto;
+  z-index: 96;
+  transition: transform 2s ease 1s;
 }
 
 .articleC-itemA {
@@ -124,7 +130,7 @@ nav {
 
 /* GitHub */
 
-.articleD {
+#articleD {
   grid-column-start: 1;
   grid-column-end: 3;
   border: 2px solid silver;
@@ -133,6 +139,8 @@ nav {
   display:grid;
   grid-template-columns: 1fr 160px 1fr auto;
   grid-template-rows: auto;
+  z-index: 99;
+  transition: transform 2s ease 1s;
 }
 
 .articleD-itemA {
@@ -149,14 +157,16 @@ nav {
 
 /*  Magento */
 
-.articleE {
+#articleE {
   grid-column-start: 3;
   grid-column-end: 6;
   border: 2px solid #6666CC;
   background-color: #6666CC;
   border-radius: 20px;
   display:grid;
-  grid-template-columns: 160px 275px;
+  grid-template-columns: 160px 260px;
+  z-index: 95;
+  transition: transform 2s ease 1s;
 }
 
 .articleE-itemA {
@@ -175,7 +185,7 @@ nav {
 
 /*  Netsuite  */
 
-.articleF {
+#articleF {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -184,8 +194,10 @@ nav {
   background-color: #996699;
   border-radius: 20px;
   display:grid;
-  grid-template-columns: 160px 275px;
+  grid-template-columns: 160px 260px;
   grid-template-rows: 300px;
+  z-index: 96;
+  transition: transform 2s ease 1s;
 }
 
 .articleF-itemA {
@@ -205,15 +217,16 @@ nav {
 
 /*  Twitter  */
 
-.articleG {
+#articleG {
   grid-column-start: 4;
   grid-column-end: 6;
   border: 2px solid #FFF;
   background-color: #FFF;
   border-radius: 20px;
   display:grid;
-  grid-template-columns: 140px auto;
+  grid-template-columns: 140px 130px;
   grid-template-rows: 160px;
+  z-index: 98;
 }
 
 .articleG-itemA {
@@ -233,7 +246,7 @@ nav {
 
 /* Board Game Arena */
 
-.articleH {
+#articleH {
   grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 3;
@@ -242,8 +255,10 @@ nav {
   background-color: #CC9966;
   border-radius: 20px;
   display:grid;
-  grid-template-columns: 160px 275px;
+  grid-template-columns: 160px 250px;
   grid-template-rows: 300px;
+  z-index: 97;
+  transition: transform 2s ease 1s;
 }
 
 .articleH-itemA {
@@ -264,7 +279,7 @@ nav {
 
 /* Spacer */
 
-.articleI {
+#articleI {
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 4;
@@ -272,6 +287,13 @@ nav {
   border: 2px solid #FF9933;
   background-color: #FF9933;
   border-radius: 20px;
+  z-index: 95;
+}
+
+#articleI p {
+  font-size: 1.8em;
+  font-family: 'Noticia Text', serif;
+  padding-left: 45px;
 }
 
 .navItem {
