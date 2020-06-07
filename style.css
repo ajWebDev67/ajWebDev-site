@@ -26,7 +26,7 @@ h2 {
   width: 1200;
 }
 
-a, h2, h3, h4, h5, h6, p, article {
+a, h2, h3, h4, h5, h6, p, article, label, input, button {
   font-family: 'Abel', sans-serif;
   color: #FFF;
 }
@@ -308,4 +308,59 @@ nav {
   float:left;
   margin: 5px 60px;
   text-decoration: none;
+}
+
+#tipCalcContainer {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  border: 2px solid purple;
+  background-color: purple;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 472px;
+  grid-template-rows: 50px, 200px, 80px;
+  width: 472px;
+  height: 330px;
+}
+
+#tipCalcHeader {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+  width: 470px;
+  height: 40px;
+}
+
+#tipCalcHeader h2 {
+  display: block;
+  margin: auto 155px;
+}
+
+#tipCalculator {
+  width: 340px;
+  display: block;
+  margin: 0 75px;
+}
+
+#tipCalculator button {
+  margin: 10px 0 0 147px;
+  color: black;
+}
+
+#tipCalculator label:first-child {
+  padding-left: 24px;
+}
+
+#tipCalculator input {
+  color: black;
+}
+
+#displayResultArea p:first-child {
+  margin: 0 0 0 132px;
+}
+
+#displayResultArea p:last-child {
+  margin: 0 0 0 149px;
 }

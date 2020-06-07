@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Noticia+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+  <nav>
+    <a class="siteLogo" href="index.html"><h1>ajWebDev</h1></a>
+  <!--  <a class="navItem" href="projects.html">Projects</a>  -->
+  </nav>
+
+<main id="grid-container">
+  <div id="tipCalcContainer">
+    <div id="tipCalcHeader">
+        <h2>Tip Calculator</h2>
+    </div>
+      <form id="tipCalculator">
+        <label for="billAmount">Enter Bill Amount:</label>
+        <input type="text" name="billAmount" id="billAmount"><br>
+        <label for="tipPercent">Enter Tip Percentage:</label>
+        <input type="text" name="tipPercent" id="tipPercent"><br>
+        <button onclick="calcTip()" name="submitButton" >Calculate Tip</button>
+    </form>
+      <div id="displayResultArea">
+        <p>Tip Amount:&nbsp;&nbsp;<span id=displayTipAmount></span></p>
+        <p>Total Bill:&nbsp;&nbsp;<span id=displayTotalAmount></span></p>
+      </div>
+    </div>
+  </main>
+
+<script type="text/javascript">
+function calcTip() {
+    event.preventDefault();
+    let billAmnt = document.getElementById('billAmount').value;
+    let tipPrcnt = document.getElementById('tipPercent').value;
+    let billAmntNum = parseFloat(billAmnt);
+    let tipPrcntNum = parseFloat(tipPrcnt);
+  if (isNaN(billAmntNum) || isNaN(tipPrcntNum)) {
+    alert('Please enter numerals only.');
+  } else {
+    let tipAmnt = billAmntNum * (tipPrcntNum / 100);
+    let billTotal = billAmntNum + tipAmnt;
+    let tipAmntString = tipAmnt.toFixed(2);
+    let billTotalString = billTotal.toFixed(2);
+    document.getElementById('displayTipAmount').innerHTML = tipAmntString;
+    document.getElementById('displayTotalAmount').innerHTML = billTotalString;
+  };
+};
+</script>
+
+  </div>
+
+</body>
