@@ -47,7 +47,11 @@ nav {
   grid-template-columns: 142px 142px 142px 142px 142px 142px 142px 142px;
   grid-template-rows: 170px 170px 170px 170px;
   font-size: 1.1em;
-  grid-gap: 2px;
+  grid-gap: 6px;
+}
+
+#articleA, #articleB, #articleC, #articleD, #articleE, #articleF, #articleG, #articleH, #articleI {
+  box-shadow: 1px 2px 5px 1px #003333;
 }
 
 /* Codecademy */
@@ -137,7 +141,7 @@ nav {
   background-color: silver;
   border-radius: 20px;
   display:grid;
-  grid-template-columns: 1fr 160px 1fr auto;
+  grid-template-columns: 1fr 158px 1fr auto;
   grid-template-rows: auto;
   z-index: 99;
   transition: transform 2s ease 1s;
@@ -313,14 +317,15 @@ nav {
 #tipCalcContainer {
   grid-column-start: 3;
   grid-column-end: 7;
-  border: 2px solid purple;
-  background-color: purple;
+  border: 2px solid #9999CC;
+  background-color: #9999CC;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 472px;
   grid-template-rows: 50px, 200px, 80px;
   width: 472px;
   height: 330px;
+  box-shadow: 1px 2px 5px 1px #003333;
 }
 
 #tipCalcHeader {
@@ -350,7 +355,7 @@ nav {
 }
 
 #tipCalculator label:first-child {
-  padding-left: 24px;
+  padding-left: 25px;
 }
 
 #tipCalculator input {
