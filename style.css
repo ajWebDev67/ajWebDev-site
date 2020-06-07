@@ -50,7 +50,7 @@ nav {
   grid-gap: 6px;
 }
 
-#articleA, #articleB, #articleC, #articleD, #articleE, #articleF, #articleG, #articleH, #articleI {
+.shadow {
   box-shadow: 1px 2px 5px 1px #003333;
 }
 
@@ -314,6 +314,19 @@ nav {
   text-decoration: none;
 }
 
+#projectA {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid #9999CC;
+  background-color: #9999CC;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.projectHeader {
+  margin: 10px 0 15px 0;
+}
+
 #tipCalcContainer {
   grid-column-start: 3;
   grid-column-end: 7;
@@ -325,7 +338,6 @@ nav {
   grid-template-rows: 50px, 200px, 80px;
   width: 472px;
   height: 330px;
-  box-shadow: 1px 2px 5px 1px #003333;
 }
 
 #tipCalcHeader {
