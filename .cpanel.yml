@@ -7,3 +7,4 @@
           - /bin/cp style.css $DEPLOYPATH
           - /bin/cp -R images $DEPLOYPATH
           - /bin/cp -R video $DEPLOYPATH
+          - /bin/cp tipcalculator.html $DEPLOYPATH
