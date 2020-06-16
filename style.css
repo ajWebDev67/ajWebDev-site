@@ -71,8 +71,8 @@ nav {
 .articleA-itemA {
   color: black;
   grid-column: 1;
-  align-self: center;
-  padding: 0 20px;
+  place-items: center normal;
+  padding: 15px 15px 0px 30px;
 }
 
 .articleA-itemA a {
@@ -81,8 +81,8 @@ nav {
 
 .articleA-itemB {
   grid-column: 2;
-  align-self: center;
-  margin: 0 20px 0 0;
+  place-items: center normal;
+  margin: 15px 20px 0 0;
 }
 
 /* Shuffle */
@@ -99,7 +99,7 @@ nav {
 #articleB p {
   font-size: 1.8em;
   font-family: 'Noticia Text', serif;
-  padding-left: 10px;
+  padding: 25px 0 0 15px;
 }
 
 /* Video clip */
@@ -121,12 +121,13 @@ nav {
 .articleC-itemA {
   grid-column-start: 1;
   grid-column-end: 2;
-  margin: 20px;
+  margin: 30px 20px;
 }
 
 .articleC-itemB {
   grid-column-start: 2;
   grid-column-end: 3;
+  margin: 30px 10px;
 }
 
 /* GitHub */
@@ -201,7 +202,7 @@ nav {
 .articleF-itemA {
   grid-column-start: 1;
   grid-column-end: 2;
-  margin: 20px 10px;
+  margin: 25px 10px 0 25px;
   align-self: center;
 }
 
@@ -210,7 +211,7 @@ nav {
   grid-column-end: 3;
   align-self: center;
   margin: 0;
-  padding-right: 10px;
+  padding: 25px 20px 0 25px;
 }
 
 /*  Twitter  */
@@ -260,7 +261,7 @@ nav {
 .articleH-itemA {
   grid-column-start: 1;
   grid-column-end: 2;
-  margin: 20px 10px;
+  margin: 20px 10px 20px 25px;
   align-self: center;
 }
 
@@ -269,7 +270,7 @@ nav {
   grid-column-end: 3;
   align-self: center;
   margin: 0;
-  padding-right: 10px;
+  padding: 20px 10px 20px 10px;
   color: #FFF;
 }
 
@@ -288,7 +289,7 @@ nav {
 #articleI p {
   font-size: 1.8em;
   font-family: 'Noticia Text', serif;
-  padding-left: 45px;
+  padding: 25px 0 0 50px;
 }
 
 .navItem {
@@ -310,7 +311,7 @@ nav {
   grid-column-end: 3;
   background-image: linear-gradient(to bottom right, hsl(240, 33.3%, 80%), hsl(240, 33.3%, 70%), hsl(240, 33.3%, 60%));
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 20px 20px 25px;
 }
 
 .projectHeader {
