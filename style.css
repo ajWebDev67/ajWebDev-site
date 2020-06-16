@@ -59,8 +59,7 @@ nav {
 #articleA {
   grid-column-start: 1;
   grid-column-end: 5;
-  border: 2px solid aliceblue;
-  background-color: aliceblue;
+  background-image: linear-gradient(to bottom right, hsl(210, 100%, 90%), hsl(210, 100%, 80%), hsl(210, 100%, 70%));
   border-radius: 20px;
   display: grid;
   grid-template-columns: auto 180px;
@@ -91,8 +90,7 @@ nav {
 #articleB {
   grid-column-start: 5;
   grid-column-end: 6;
-  border: 2px solid #FF9933;
-  background-color: #FF9933;
+  background-image: linear-gradient(to bottom right, hsl(30, 100%, 70%), hsl(30, 100%, 60%), hsl(30, 100%, 50%));
   border-radius: 20px;
   z-index: 97;
   transition: transform 2s ease 1s;
@@ -111,8 +109,7 @@ nav {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: 2px solid darkseagreen;
-  background-color: darkseagreen;
+  background-image: linear-gradient(to bottom right, hsl(90, 50%, 70%), hsl(90, 50%, 60%), hsl(90, 50%, 50%));
   border-radius: 20px;
   display:grid;
   grid-template-columns: 1fr 189px 1fr auto;
@@ -137,8 +134,7 @@ nav {
 #articleD {
   grid-column-start: 1;
   grid-column-end: 3;
-  border: 2px solid silver;
-  background-color: silver;
+  background-image: linear-gradient(to bottom right, hsl(0, 0%, 90%), hsl(0, 0%, 80%), hsl(0, 0%, 70%));
   border-radius: 20px;
   display:grid;
   grid-template-columns: 1fr 158px 1fr auto;
@@ -164,8 +160,7 @@ nav {
 #articleE {
   grid-column-start: 3;
   grid-column-end: 6;
-  border: 2px solid #6666CC;
-  background-color: #6666CC;
+  background-image: linear-gradient(to bottom right, hsl(240, 50%, 70%), hsl(240, 50%, 60%), hsl(240, 50%, 50%));
   border-radius: 20px;
   display:grid;
   grid-template-columns: 160px 260px;
@@ -194,8 +189,7 @@ nav {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 5;
-  border: 2px solid #996699;
-  background-color: #996699;
+  background-image: linear-gradient(to bottom right, hsl(300, 20%, 60%), hsl(300, 20%, 50%), hsl(300, 20%, 40%));
   border-radius: 20px;
   display:grid;
   grid-template-columns: 160px 260px;
@@ -224,8 +218,7 @@ nav {
 #articleG {
   grid-column-start: 4;
   grid-column-end: 6;
-  border: 2px solid #FFF;
-  background-color: #FFF;
+  background-image: linear-gradient(to bottom right, hsl(0, 0%, 100%), hsl(0, 0%, 95%), hsl(0, 0%, 90%));
   border-radius: 20px;
   display:grid;
   grid-template-columns: 140px 130px;
@@ -255,8 +248,7 @@ nav {
   grid-column-end: 9;
   grid-row-start: 3;
   grid-row-end: 5;
-  border: 2px solid #CC9966;
-  background-color: #CC9966;
+  background-image: linear-gradient(to bottom right, hsl(30, 50%, 70%), hsl(30, 50%, 60%), hsl(30, 50%, 50%));
   border-radius: 20px;
   display:grid;
   grid-template-columns: 160px 250px;
@@ -288,8 +280,7 @@ nav {
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
-  border: 2px solid #FF9933;
-  background-color: #FF9933;
+  background-image: linear-gradient(to bottom right, hsl(30, 100%, 70%), hsl(30, 100%, 60%), hsl(30, 100%, 50%));
   border-radius: 20px;
   z-index: 95;
 }
@@ -317,8 +308,7 @@ nav {
 #projectA {
   grid-column-start: 1;
   grid-column-end: 3;
-  border: 2px solid #9999CC;
-  background-color: #9999CC;
+  background-image: linear-gradient(to bottom right, hsl(240, 33.3%, 80%), hsl(240, 33.3%, 70%), hsl(240, 33.3%, 60%));
   border-radius: 20px;
   padding: 10px;
 }
@@ -330,8 +320,7 @@ nav {
 #tipCalcContainer {
   grid-column-start: 3;
   grid-column-end: 7;
-  border: 2px solid #9999CC;
-  background-color: #9999CC;
+  background-image: linear-gradient(to bottom right, hsl(240, 33.3%, 80%), hsl(240, 33.3%, 70%), hsl(240, 33.3%, 60%));
   border-radius: 20px;
   display: grid;
   grid-template-columns: 472px;
@@ -380,4 +369,8 @@ nav {
 
 #displayResultArea p:last-child {
   margin: 0 0 0 149px;
+}
+
+#greeting {
+  color: black;
 }
