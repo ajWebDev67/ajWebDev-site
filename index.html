@@ -21,7 +21,7 @@
       <a href="https://www.codecademy.com" target="_blank"><img class="articleA-itemB" src="images/codecademy-techs-logo.png" alt="codecademy logo with html5, css3 and js6 badges"></a>
     </article>
     <article id="articleB" class="shadow">
-      <p>Shuffle!</p>
+      <p id="shuffle">Shuffle!</p>
     </article>
     <article id="articleC" class="shadow">
       <embed class="articleC-itemA" type="video/mp4" src="video/amyBikeRide.mp4" width="155" height="275">
@@ -49,13 +49,14 @@
     <p class="articleH-itemB">I am looking into using <a href="https://www.boardgamearena.com" target="_blank">Board Game Arena's</a> sandbox to develop a game called <a href="https://boardgamegeek.com/boardgame/187959/sensei" target="_blank">Sensei</a>. If you like board games check the site out and challenge me to a game. I'm Alistair67.</p>
   </article>
   <article id="articleI" class="shadow">
-    <p>Shuffle back!</p>
+    <p id="shuffle-back">Shuffle back!</p>
   </article>
   </main>
 </div>
 
 <script type="text/javascript">
 window.onload = function() {
+
   document.getElementById("articleB").onclick = function () {
     document.getElementById("articleA").style.transform = "translate(591px)";
     document.getElementById("articleB").style.transform = "translate(-149px)";
@@ -64,6 +65,13 @@ window.onload = function() {
     document.getElementById("articleE").style.transform = "translate(148px)";
     document.getElementById("articleF").style.transform = "translate(741px)";
     document.getElementById("articleH").style.transform = "translate(-741px)";
+    document.getElementById("shuffle").style.visibility = "hidden";
+
+    const displayShuffleBack = () => {
+      document.getElementById("shuffle-back").style.visibility = "visible"
+    }
+    setTimeout(displayShuffleBack, 3500);
+
   }
 
   document.getElementById("articleI").onclick = function () {
@@ -74,6 +82,12 @@ window.onload = function() {
     document.getElementById("articleE").style.transform = "translate(0px)";
     document.getElementById("articleF").style.transform = "translate(0px)";
     document.getElementById("articleH").style.transform = "translate(0px)";
+    document.getElementById("shuffle-back").style.visibility = "hidden";
+
+    const displayShuffle = () => {
+      document.getElementById("shuffle").style.visibility = "visible"
+    }
+    setTimeout(displayShuffle, 3500);
   }
 }
 </script>

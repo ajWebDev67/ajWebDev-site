@@ -21,11 +21,6 @@ h1 {
   color: #FFF;
 }
 
-h2 {
-  display: block;
-  width: 1200;
-}
-
 a, h2, h3, h4, h5, h6, p, article, label, input, button {
   font-family: 'Abel', sans-serif;
   color: #FFF;
@@ -290,6 +285,7 @@ nav {
   font-size: 1.8em;
   font-family: 'Noticia Text', serif;
   padding: 25px 0 0 50px;
+  visibility: hidden;
 }
 
 .navItem {
