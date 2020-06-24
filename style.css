@@ -7,7 +7,7 @@ body {
 
 #page-container {
   display: block;
-  width: 1150px;
+  width: 1175px;
   height: 700px;
   margin: 0 auto;
 }
@@ -142,13 +142,13 @@ nav {
 .articleD-itemA {
   grid-column-start: 1;
   grid-column-end: 2;
-  margin: 15px 20px;
+  margin: 25px 20px;
 }
 
 .articleD-itemB {
   grid-column-start: 2;
   grid-column-end: 3;
-  align-self: center;
+  margin-top: 45px;
 }
 
 /*  Magento */
@@ -370,4 +370,266 @@ nav {
 
 #greeting {
   color: black;
+}
+
+@media only screen and (max-width: 450px) {
+
+  #page-container {
+    display: block;
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  #grid-container {
+    display:grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    font-size: 1.1em;
+    grid-gap: 6px;
+    clear: both;
+  }
+
+  .siteLogo {
+    position: relative;
+    left: 12px;
+  }
+
+  .navItem {
+    position: relative;
+    top: -50px;
+    left: 80px;
+  }
+
+#articleB, #articleC, #articleI {
+  visibility: hidden;
+}
+
+#articleA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-template-columns: 320px;
+  grid-template-rows: 180px;
+  place-items: center;
+}
+
+.articleA-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.articleA-itemB {
+  visibility:  hidden;
+}
+
+#articleD {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-template-columns: 155px 155px;
+  grid-template-rows: 180px;
+}
+
+.articleD-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 37px 30px;
+}
+
+.articleD-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 55px;
+  margin-left: 30px;
+}
+
+#articleE {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-template-columns: 320px;
+  grid-template-rows: 180px;
+}
+
+.articleE-itemA {
+  visibility:  hidden;
+}
+
+.articleE-itemB {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: auto;
+  margin: -150px 30px 0 30px;
+}
+
+#articleF {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-template-columns: 320px;
+  grid-template-rows: 180px;
+}
+
+.articleF-itemA {
+  visibility:  hidden;
+}
+
+.articleF-itemB {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: auto;
+  margin: -155px 10px 0 30px;
+  padding: 0;
+}
+
+#articleG {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-template-columns: 155px 155px;
+  grid-template-rows: 180px;
+  }
+
+  .articleG-itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 30px 30px 0 20px;
+  }
+
+  .articleG-itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 25px;
+  margin-left: 10px;
+  }
+
+#articleH {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-template-columns: 320px;
+  grid-template-rows: 180px;
+  }
+
+  .articleH-itemA {
+  visibility:  hidden;
+  }
+
+  .articleH-itemB {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: auto;
+  margin: -145px 10px 0 30px;
+  padding: 0;
+  }
+
+  #tipCalcContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: 340px;
+    grid-template-rows: 50px, 200px, 80px;
+    width: 340px;
+    height: 330px;
+  }
+
+  #tipCalcHeader {
+    width: 340px;
+  }
+
+  #tipCalcHeader h2 {
+    display: block;
+    margin: auto 85px;
+  }
+
+  #tipCalculator {
+    width: 340px;
+    display: block;
+    margin: 0 30px;
+  }
+
+  #displayResultArea p:first-child {
+    margin: 0 0 0 72px;
+  }
+
+  #displayResultArea p:last-child {
+    margin: 0 0 0 89px;
+  }
+
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  #page-container {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  #grid-container {
+    display:grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 200px 200px 200px 210px 200px 200px;
+    font-size: 1.1em;
+    grid-gap: 6px;
+    clear: both;
+  }
+
+.articleA-itemA {
+  margin-right: 15px;
+}
+
+.articleD-itemA {
+  margin-left: 25px;
+}
+
+.articleD-itemB {
+  margin-left: 20px;
+}
+
+.articleF-itemB {
+  margin-top: -167px;
+  margin-right: 30px;
+}
+
+.articleG-itemA {
+  margin-left: 15px;
+}
+
+.articleG-itemB {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.articleH-itemB {
+  margin-right: 30px;
+}
+
+#tipCalcContainer {
+  grid-template-columns: 320px;
+  grid-template-rows: 50px, 200px, 80px;
+  width: 320px;
+  height: 330px;
+}
+
+#tipCalcHeader {
+  width: 320px;
+}
+
+#tipCalcHeader h2 {
+  display: block;
+  margin: auto 80px;
+}
+
+#tipCalculator {
+  width: 320px;
+  display: block;
+  margin: 0 30px;
+}
 }
