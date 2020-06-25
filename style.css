@@ -372,7 +372,7 @@ nav {
   color: black;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
 
   #page-container {
     display: block;
@@ -564,7 +564,7 @@ nav {
 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 365px) {
 
   #page-container {
     display: block;
