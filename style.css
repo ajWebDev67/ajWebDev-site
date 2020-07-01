@@ -374,6 +374,10 @@ nav {
 
 @media only screen and (min-width: 480px) {
 
+  body {
+    width: 480px;
+  }
+
   #page-container {
     display: block;
     width: 340px;
@@ -565,6 +569,10 @@ nav {
 }
 
 @media only screen and (min-width: 360px) {
+
+  body {
+    width: 360px;
+  }
 
   #page-container {
     display: block;
