@@ -406,6 +406,26 @@ nav {
 
 #articleB, #articleC, #articleI {
   visibility: hidden;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0;
+  padding: 0;
+}
+
+#articleB p, #articleI p {
+  margin: 0;
+  padding: 0;
+}
+
+.articleC-itemA, .articleC-itemB {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0;
+  padding: 0;
 }
 
 #articleA {
